@@ -1,0 +1,29 @@
+$(document).ready(function(){
+	$(".card-img-top").on("mouseover",function(){
+		$(this).animate({
+			padding:"10",
+			opacity:"0.9"
+		})
+	})
+	$(".card-img-top").on("mouseout",function(){
+		$(this).animate({
+			padding:"0",
+			opacity:"1"
+		})
+	})
+	$(".desk").click(function(){
+		$(".description").slideToggle();
+	})
+	$(".card-body").on("mouseover",function(){
+		$(this).addClass("shadow-lg");
+	})
+	$(".card-body").on("mouseout",function(){
+		$(this).removeClass("shadow-lg");
+	})
+	$(".card").on("mouseover",function(){
+		$(this).addClass("shadow-lg");
+	})
+	$(".card").on("mouseout",function(){
+		$(this).removeClass("shadow-lg");
+	})
+})
